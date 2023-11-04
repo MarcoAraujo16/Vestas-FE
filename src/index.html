@@ -1,5 +1,16 @@
+<!DOCTYPE html>
 <html>
-<body>
-	<p>Hello World</p>
+<head>
+    <title>AngularJS API Consuming Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="postController">
+    <h1>Lista de Postagens</h1>
+    <ul>
+        <li ng-repeat="post in posts">
+            {{ post.title }}
+        </li>
+    </ul>
 </body>
 </html>
